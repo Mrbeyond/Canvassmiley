@@ -1,0 +1,16 @@
+	var smiley=document.getElementById('smil');
+		var ley=smiley.getContext("2d");
+		var x=smiley.width/2, y=smiley.height/2, pi=Math.PI, d=Math.PI/180;
+		ley.strokeStyle="yellow"; ley.fillStyle="yellow";
+		ley.beginPath();
+		ley.arc(x,y,70,0,2*pi);
+		ley.stroke();
+		ley.beginPath();
+		ley.fillRect(x-1,y-2,3,18);
+		ley.beginPath();		
+		ley.arc(x,y,40,50*d,130*d,false);
+		ley.stroke();		
+		ley.beginPath();
+		ley.arc(x-30,y-20,6,0,2*Math.PI);
+		ley.arc(x+30,y-20,6,0,2*Math.PI);
+		ley.fill();
